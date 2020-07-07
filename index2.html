@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/action_page.php">
+        First Name: <br>
+        <input type="text" name="firstname" placeholder="Yunah" required autofocus>
+        <br>
+        Last Name: <br>
+        <input type="text" name="lastname" placeholder="Kim" required>
+        <br><br>
+        <label for="comment">Comment:</label>
+        <br>
+        <textarea name="comment" rows="4" cols="50" placeholder="Tell us about yourself" required></textarea>
+        <br><br>
+        <label for="date">Date:</label>
+        <br>
+        <input type="date" name="date">
+        <br><br>
+        <label for="pizzaToppings">What is your favorite pizza topping?</label>
+        <br>
+        <input list="pizzaToppings" name="pizzaToppings">
+            <datalist id="pizzaToppings">
+                <option value="None"></option>
+                <option value="Pepperoni"></option>
+                <option value="Mushroom"></option>
+                <option value="Peppers"></option>
+            </datalist>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
